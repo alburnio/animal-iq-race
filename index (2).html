@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animal IQ Race</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<section id="menu" class="skrin">
+  <h1>🏁 Animal IQ Race</h1>
+  <p>Perlumbaan haiwan 3D untuk 4 pemain</p>
+  <button id="btnMula">Main</button>
+  <button id="btnCara">Cara Bermain</button>
+  <p id="cara" class="kecil" hidden>
+    Pilih haiwan setiap pemain, kemudian tekan butang/kekunci laju-laju untuk membuat haiwan anda berlari!<br>
+    Kekunci: P1 = Q, P2 = V, P3 = P, P4 = M (atau tekan butang berwarna di bawah skrin).
+  </p>
+</section>
+
+<section id="pilih" class="skrin" hidden>
+  <h2>Pilih Haiwan Anda</h2>
+  <div id="kad"></div>
+  <div>
+    <button id="btnKembali">« Kembali</button>
+    <button id="btnLumba">Mula Perlumbaan »</button>
+  </div>
+</section>
+
+<section id="kira" class="skrin lutsinar" hidden><div id="nombor">3</div></section>
+
+<section id="hud" hidden>
+  <div id="kedudukan"></div>
+  <div id="kawalan"></div>
+</section>
+
+<section id="hasil" class="skrin" hidden>
+  <h2>🏆 Keputusan</h2>
+  <ol id="senarai"></ol>
+  <div>
+    <button id="btnSemula">Lumba Semula</button>
+    <button id="btnMenu">Menu Utama</button>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
